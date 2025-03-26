@@ -11,24 +11,24 @@ runConfig:
 env:
   # Values for Firebase config can be found by clicking the cog next to "Project Overview"
   # in the firebase console and clicking "project settings"
-  # - variable: NEXT_PUBLIC_FIREBASE_API_KEY
-  #   value: <YOUR VALUE HERE>
-  # - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-  #   value: <YOUR VALUE HERE>
-  # - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
-  #   value: <YOUR VALUE HERE>
-  # - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
-  #   value: <YOUR VALUE HERE>
-  # - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
-  #   value: <YOUR VALUE HERE>
-  # - variable: NEXT_PUBLIC_FIREBASE_APP_ID
-  #   value: <YOUR VALUE HERE>
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyDJ_G-Y60INA2UA24PjcnrWbjLPx20xTWc
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: inlined-junkdrawer.firebaseapp.com
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: inlined-junkdrawer
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: inlined-junkdrawer.appspot.com
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "92611791981"
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:92611791981:web:549bff1f6842f79fad0364
 
   # The Google API key needs access to the Generative AI APIs. Create your key by visiting
   # https://ai.google.dev/gemini-api/docs and clicking "Get a Gemini API Key"
   # You can then run `firebase apphosting:secrets:set google-api-key and pasting the value.
-  # - variable: GOOGLE_API_KEY
-  #   secret: google-api-key
+  - variable: GOOGLE_API_KEY
+    secret: google-api-key
 
   # To use stripe, you must create an account on stripe.com. From the stripe dashboard
   # You can copy the NEXT_PUBLIC_STRIPE_PUB_KEY from "Publishable key" in the dashboard.
@@ -39,11 +39,11 @@ env:
   # run `firebase apphosting:secrets:set stripe-webhook-secret` and paste the secret value when
   # prompted. The value for STRIPE_ACCOUNT_ID can be found in the upper right corner of the
   # webhook details page.
-  # - variable: NEXT_PUBLIC_STRIPE_PUB_KEY
-  #  value: <YOUR VALUE HERE>
-  # - variable: STRIPE_SECRET_KEY
-  #   secret: stripe-secret-key
-  # - variable: STRIPE_ACCOUNT_ID
-  #   value: <YOUR VALUE HERE>
-  # - variable: STRIPE_WEBHOOK_SECRET
-  #   secret: stripe-webhook-secret
+  - variable: NEXT_PUBLIC_STRIPE_PUB_KEY
+    value: pk_test_kDSImiqKEaqK2cjDKx7b1v0J
+  - variable: STRIPE_SECRET_KEY
+    secret: stripe-secret-key
+  - variable: STRIPE_ACCOUNT_ID
+    value: we_1R713nLZyeVSxFXzErXejI5Z
+  - variable: STRIPE_WEBHOOK_SECRET
+    secret: stripe-webhook-secret

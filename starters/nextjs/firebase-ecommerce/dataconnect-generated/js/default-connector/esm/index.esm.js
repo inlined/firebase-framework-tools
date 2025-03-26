@@ -3,7 +3,7 @@ import { queryRef, executeQuery, mutationRef, executeMutation, validateArgs } fr
 export const connectorConfig = {
   connector: 'default',
   service: 'firebase-ecommerce',
-  location: 'us-central1'
+  location: 'us-east1'
 };
 
 export function upsertCustomerRef(dcOrVars, vars) {

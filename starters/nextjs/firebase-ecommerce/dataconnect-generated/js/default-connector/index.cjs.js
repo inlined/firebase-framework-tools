@@ -3,7 +3,7 @@ const { queryRef, executeQuery, mutationRef, executeMutation, validateArgs } = r
 const connectorConfig = {
   connector: 'default',
   service: 'firebase-ecommerce',
-  location: 'us-central1'
+  location: 'us-east1'
 };
 exports.connectorConfig = connectorConfig;
 
